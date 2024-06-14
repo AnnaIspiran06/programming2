@@ -204,6 +204,6 @@ def process_input_file(input_filename, output_filename):
 
 
 if __name__ == "__main__":
-    input_file = (r'C:\Users\ASUS\Downloads\input1.txt')  # Припустимо, що файл input.txt містить коефіцієнти многочленів
-    output_file = "output21.txt"  # Файл, в який будуть записуватись результати
+    input_file = (r'C:\Users\ASUS\Downloads\input1.txt') 
+    output_file = "output21.txt" 
     process_input_file(input_file, output_file)
