@@ -130,10 +130,10 @@ class RationalNumber:
             return 0
 
 
-
+# Перше завдання: Обробка файлу input1.txt
 numbers1 = RationalNumber.from_file(r'C:\Users\ASUS\Downloads\input1.txt')
 
-
+# Перевірка, чи файл знайдено і оброблено правильно
 if numbers1:
     # Знаходження максимального числа
     max_number = max(numbers1, key=lambda x: float(x.numerator) / x.denominator)
@@ -143,7 +143,7 @@ if numbers1:
     max_abs_number = max(numbers1, key=lambda x: abs(float(x.numerator) / x.denominator))
     print(f"Максимальне число за модулем: {max_abs_number}")
 
-
+    # Знаходження середнього арифметичного
     average = sum(float(num.numerator) / num.denominator for num in numbers1) / len(numbers1)
     print(f"Середнє арифметичне: {average}")
 else:
